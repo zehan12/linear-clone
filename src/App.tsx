@@ -1,9 +1,12 @@
+import { Header, Footer } from "./components/common";
+
 function App() {
-  return (
-    <>
-      <h1 className="text-center text-3xl underline">Linear App</h1>
-    </>
-  );
+    return (
+        <>
+            <Header />
+            <Footer />
+        </>
+    );
 }
 
 export default App;
