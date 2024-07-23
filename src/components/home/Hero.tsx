@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
     return (
-        <section className="h-screen w-full bg-gradient-to-l from-black to-[#0C0515] mask-radial-faded pt-20 md:pt-40">
+        <section className="h-full w-full bg-gradient-to-l from-black to-[#0C0515] mask-radial-faded pt-20 md:pt-40">
             <div className="max-w-[1200px] mx-auto">
                 <h1 className="hidden md:block text-5xl font-semibold text-white leading-snug animate-blur-in">
                     Linear is a purpose-built tool for
@@ -32,6 +32,13 @@ const Hero = () => {
                         </p>
                     </Button>
                 </div>
+            </div>
+            <div className="w-full h-full">
+                <img
+                    className="w-full h-full object-cover"
+                    src="/assets/home/hero/platform.png"
+                    alt="Platform"
+                />
             </div>
         </section>
     );
