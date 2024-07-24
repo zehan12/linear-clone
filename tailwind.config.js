@@ -80,11 +80,16 @@ module.exports = {
             opacity: "1",
           },
         },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "blur-in": "blur-in 1s ease-out forwards",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
       spacing: {
         "delay-100": "100ms",
