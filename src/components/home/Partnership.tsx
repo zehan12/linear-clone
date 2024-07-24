@@ -1,11 +1,18 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
-import { PartnerIcons } from "../icons/partners";
+import {
+    partnerOne,
+    partnerTwo,
+    partnerThree,
+    marqueeArray,
+} from "../icons/partners";
 
 export const Partnerships = () => {
     const [isHover, setHover] = useState<boolean>(false);
     const [currentPart, setCurrentPart] = useState<number>(0);
     const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
+
+    const parts = [partnerOne, partnerTwo, partnerThree];
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -75,53 +82,22 @@ export const Partnerships = () => {
             </div>
             <div className="md:hidden w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
                 <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                    {[partnerOne, partnerTwo, partnerThree]
-                        .flat(Infinity)
-                        .map((SvgComponent, idx) => (
-                            <div
-                                key={idx}
-                                className={cn(
-                                    "flex flex-col justify-start items-center mx-2 lg:mx-6 md:-my-10 transform transition-transform duration-500"
-                                )}
-                            >
-                                <SvgComponent
-                                    width={100}
-                                    height={100}
-                                    fill={"white"}
-                                />
-                            </div>
-                        ))}
+                    {marqueeArray.map((SvgComponent, idx) => (
+                        <div
+                            key={idx}
+                            className={cn(
+                                "flex flex-col justify-start items-center mx-2 lg:mx-6 md:-my-10 transform transition-transform duration-500"
+                            )}
+                        >
+                            <SvgComponent
+                                width={100}
+                                height={100}
+                                fill={"white"}
+                            />
+                        </div>
+                    ))}
                 </ul>
             </div>
         </section>
     );
 };
-
-const partnerOne = [
-    PartnerIcons.Icon1,
-    PartnerIcons.Icon2,
-    PartnerIcons.Icon3,
-    PartnerIcons.Icon4,
-    PartnerIcons.Icon5,
-    PartnerIcons.Icon6,
-];
-
-const partnerTwo = [
-    PartnerIcons.Icon7,
-    PartnerIcons.Icon8,
-    PartnerIcons.Icon9,
-    PartnerIcons.Icon10,
-    PartnerIcons.Icon11,
-    PartnerIcons.Icon12,
-];
-
-const partnerThree = [
-    PartnerIcons.Icon13,
-    PartnerIcons.Icon14,
-    PartnerIcons.Icon15,
-    PartnerIcons.Icon16,
-    PartnerIcons.Icon17,
-    PartnerIcons.Icon18,
-];
-
-const parts = [partnerOne, partnerTwo, partnerThree];
