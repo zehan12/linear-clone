@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Linear UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the Linear UI, a popular project management tool interface. The goal of this application is to replicate the look and feel of the Linear UI while providing a similar user experience. It showcases various features such as task management, project tracking, and a clean user interface.
 
-Currently, two official plugins are available:
+**Live** https://linear-clone-peach.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+https://github.com/user-attachments/assets/6e60c7f9-c8b2-4df8-8645-5c0ac358e0b8
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   **React**: For building the user interface components.
+-   **Tailwind CSS**: For styling and responsive design.
+-   **TypeScript**: For static type checking and better development experience.
+-   **Framer Motion**: For animations and transitions.
+-   **Shadcn UI**: For
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To get started with the project, follow these steps:
+
+**Clone the Repository**
+
+```bash
+git clone https://github.com/zehan12/linear-clone.git
+cd linear-clone
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Install Dependencies**
+
+```bash
+npm install
+```
+
+**Run the Development Server**
+
+```bash
+npm run dev
+```
+
+The application will be available at http://localhost:3000.
