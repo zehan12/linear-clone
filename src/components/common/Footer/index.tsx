@@ -3,7 +3,7 @@ import { Icons } from "../../icons";
 export const Footer = () => {
     return (
         <>
-            <footer className="mt-12 border-t border-gray-100 py-10 text-md bg-[#08090A]">
+            <footer className="mt-12 py-10 text-md bg-[#08090A]">
                 <div className="mx-auto max-w-[120rem] px-[2.4rem] flex flex-col justify-center lg:flex-row gap-20">
                     <div>
                         <div className="flex h-full flex-row justify-between lg:flex-col">

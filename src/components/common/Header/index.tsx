@@ -1,3 +1,4 @@
+import { Menu } from 'lucide-react';
 import { Icons } from "@/components/icons";
 import { Button } from "../../ui/button";
 import Navigation from "./Navigation";
@@ -24,7 +25,9 @@ export const Header = () => {
                         Sign up
                     </Button>
                 </div>
-                <button className="ml-6 md:hidden"></button>
+                <button className="md:hidden">
+                    <Menu color='white' />
+                </button>
             </div>
         </header>
     );

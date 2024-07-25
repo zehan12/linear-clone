@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export const Ideate = () => {
     const [ideateOption, setIdeateOption] = useState<number>(1);
-    const ideateImages: string[] = ["3.png", "ideate3a.png", "ideate3b.png"];
+    const ideateImages: string[] = ["ideate3.png", "ideate3a.png", "ideate3b.png"];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -69,9 +69,9 @@ export const Ideate = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full md:w-1/2 overflow-hidden mx-6 md:-mt-10">
+            <div className="w-full md:w-1/2 overflow-hidden overflow-x-hidden mx-6 md:-mt-10">
                 {ideateOption !== 1 && ideateOption !== 2 && (
-                    <div className="relative w-full h-full">
+                    <div className="hidden md:block relative w-full h-full">
                         {ideateImages.map((image, index) => (
                             <img
                                 key={index}
