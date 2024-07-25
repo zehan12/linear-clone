@@ -1,6 +1,9 @@
+import { Icons } from "../icons";
+import { WorkflowCarousel } from "./WorkflowCarousel";
+
 export const WorkflowIntegration = () => {
     return (
-        <section className="bg-[#0E0E10] text-white w-full h-full pb-10">
+        <section className="bg-[#0E0E10] text-white w-full h-full pb-10 md:pb-40">
             <div className="flex flex-col justify-center gap-3 group md:max-w-[1000px] md:mx-auto mx-5 pt-40">
                 <div className="flex items-center">
                     <hr className="h-2 w-3 bg-purple-400 border-none rounded-lg mr-2"></hr>
@@ -18,9 +21,8 @@ export const WorkflowIntegration = () => {
                         </p>
                     </div>
                 </div>
-                {/* car */}
-                <div></div>
             </div>
+            <WorkflowCarousel /> 
             <div className="md:flex">
                 <div className="md:w-2/6 md:ml-48">
                     <div className="mx-4 flex flex-col gap-3 md:mt-10">
@@ -60,23 +62,27 @@ export const WorkflowIntegration = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-full flex flex-wrap items-center justify-evenly gap-16 md:gap-2 text-sm">
-                            <div className="w-20">
+                        <div className="w-full flex flex-wrap items-baseline justify-evenly gap-20 md:gap-0 text-sm">
+                            <div className="w-20 md:w-24 flex flex-col items-baseline gap-2">
+                                <Icons.auth width={20} height={20} />
                                 <p>SSO, SAML, SCIM</p>
                             </div>
-                            <div className="w-20">
+                            <div className="w-20 md:w-24 flex flex-col items-baseline gap-2">
+                                <Icons.soc width={20} height={20} />
                                 <p>SOC 2 Compliant</p>
                             </div>
-                            <div className="w-20">
+                            <div className="w-20 md:w-24 flex flex-col items-baseline gap-2">
+                                <Icons.web width={20} height={20} />
                                 <p>Multi-region support</p>
                             </div>
-                            <div className="w-20">
+                            <div className="w-20 md:w-24 flex flex-col items-baseline gap-2">
+                                <Icons.setting width={20} height={20} />
                                 <p>Advanced admin controls</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:flex flex-col ml-20 w-6/12 bg-red-500 h-full">
+                <div className="hidden md:flex flex-col ml-20 w-6/12 h-full">
                     <img src="/assets/home/workflow_integration/box1.png" />
                     <img src="/assets/home/workflow_integration/box2.png" />
                 </div>
