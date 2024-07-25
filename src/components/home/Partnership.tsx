@@ -27,7 +27,7 @@ export const Partnerships = () => {
     }, []);
 
     return (
-        <section className="p-6 pt-20 text-white bg-gradient-to-l from-black to-[#0C0515]">
+        <section className="p-6 pt-20 -mb-20 md:-mb-0 text-white bg-gradient-to-l from-black to-[#08090A]">
             <div className="hidden md:block p-4 mx-auto text-center mb-3 text-2xl">
                 <p>Powering the world’s best product teams.</p>
                 <p className="text-zinc-400">
@@ -80,8 +80,27 @@ export const Partnerships = () => {
                     )}
                 </div>
             </div>
-            <div className="md:hidden w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+            <div className="w-full md:hidden inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
                 <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    {marqueeArray.map((SvgComponent, idx) => (
+                        <div
+                            key={idx}
+                            className={cn(
+                                "flex flex-col justify-start items-center mx-2 lg:mx-6 md:-my-10 transform transition-transform duration-500"
+                            )}
+                        >
+                            <SvgComponent
+                                width={200}
+                                height={200}
+                                fill={"white"}
+                            />
+                        </div>
+                    ))}
+                </ul>
+                <ul
+                    className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                    aria-hidden="true"
+                >
                     {marqueeArray.map((SvgComponent, idx) => (
                         <div
                             key={idx}

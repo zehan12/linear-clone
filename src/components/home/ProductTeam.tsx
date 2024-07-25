@@ -13,7 +13,7 @@ export const ProductTeam = () => {
     };
 
     return (
-        <section className="w-full flex flex-col items-center gap-10 md:gap-0 bg-gradient-to-l from-black to-[#0C0515] py-20 text-white">
+        <section className="w-full flex flex-col items-center gap-10 md:gap-0 bg-gradient-to-l from-black to-[#08090A] py-20 text-white">
             <div className="flex flex-col md:flex-row justify-start md:items-center items-start px-6 md:px-0 gap-5 md:gap-20 w-full md:w-8/12">
                 <h3 className="text-4xl md:text-5xl font-semibold leading-10 md:leading-snug md:ml-10 ">
                     Made for modern
