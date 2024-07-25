@@ -1,5 +1,6 @@
 import { Icons } from "../icons";
 import { WorkflowCarousel } from "./WorkflowCarousel";
+import { WorkflowCarouselNative } from "./WorkflowCarouselNative";
 
 export const WorkflowIntegration = () => {
     return (
@@ -23,6 +24,7 @@ export const WorkflowIntegration = () => {
                 </div>
             </div>
             <WorkflowCarousel /> 
+            <WorkflowCarouselNative />
             <div className="md:flex">
                 <div className="md:w-2/6 md:ml-48">
                     <div className="mx-4 flex flex-col gap-3 md:mt-10">

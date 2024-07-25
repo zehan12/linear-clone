@@ -56,7 +56,7 @@ export const WorkflowCarousel = () => {
                     ))}
                 </div>
             </div>
-            <div className="w-full flex justify-center gap-6 my-3">
+            <div className="w-full hidden md:flex justify-center gap-6 my-3">
                 <ChevronLeft
                     size={40}
                     onClick={() => currentSlide !== 0 && prevSlide()}
