@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/6e60c7f9-c8b2-4df8-8645-5c0ac358e0b8
 -   **Tailwind CSS**: For styling and responsive design.
 -   **TypeScript**: For static type checking and better development experience.
 -   **Framer Motion**: For animations and transitions.
--   **Shadcn UI**: For
+-   **ShadCN**: For UI components and enhanced design elements.
 
 ## Installation
 
